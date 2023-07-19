@@ -107,6 +107,22 @@ form.sign-up-form {
     font-weight: 600;
     color: #444;
 }
+.input-field {
+    position: relative; /* Add position relative for positioning the eye icon */
+}
+
+.input-field .toggle-password {
+    position: absolute; /* Position the eye icon */
+    right: 10px; /* Adjust the right position as needed */
+    cursor: pointer;
+    color: #666;
+    font-size: 18px;
+}
+
+/* Add styles for the eye icon when password is visible */
+.input-field .toggle-password.active {
+    color: #3cb815;
+}
 
 .btn {
     width: 150px;

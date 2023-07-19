@@ -15,7 +15,7 @@ textarea {
 .container {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 130vh;
   padding: 2rem;
   background-color: #fafafa;
   overflow: hidden;

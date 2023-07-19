@@ -1,98 +1,13 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
 }
 
-.sidebar {
-  width: 200px;
-  margin-right: 20px;
-  border-right: 2.5px solid #ccc;
-  padding-right: 10px;
-}
-
-.sidebar h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10;
-
-  
-.category-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .category-list li {
-    margin-bottom: 5px; 
-  }
-
-  
-  .content {
-    flex-grow: 1;
-  }
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .vegetable-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .vegetable-item {
-    background: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    transition: transform 0.3s;
-    cursor: pointer;
-  }
-  
-  .vegetable-item:hover {
-    transform: translateY(-5px);
-  }
-  
-  .vegetable-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-    object-fit: cover;
-    object-position: center;
-    width: 7%;
-    height: 200px;
-  }
-  
-  .vegetable-item h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .vegetable-item p {
-    margin-bottom: 0;
-  }
-  
-  
-  .vegetable-item .hover-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .vegetable-item:hover .hover-card {
-    opacity: 1;
-  }
