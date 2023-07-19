@@ -1,28 +1,33 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  margin-right: 20px;
+  border-right: 2.5px solid #ccc;
+  padding-right: 10px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10;
+
   
-  .sidebar {
-    width: 200px;
-  }
-  
-  .sidebar h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .category-list {
+.category-list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
   .category-list li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; 
   }
+
   
   .content {
     flex-grow: 1;
@@ -58,7 +63,7 @@
     margin-bottom: 10px;
     object-fit: cover;
     object-position: center;
-    width: 70%;
+    width: 7%;
     height: 200px;
   }
   
@@ -70,6 +75,7 @@
   .vegetable-item p {
     margin-bottom: 0;
   }
+  
   
   .vegetable-item .hover-card {
     position: absolute;
@@ -90,4 +96,3 @@
   .vegetable-item:hover .hover-card {
     opacity: 1;
   }
-  
