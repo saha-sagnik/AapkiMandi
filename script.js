@@ -28,3 +28,6 @@ btns.forEach((btn, i) => {
 
 // Call sliderNav function initially with a default value
 sliderNav(0);
+
+
+
