@@ -350,6 +350,64 @@ clip-path: circle(0% at 0 50%);
   transform: scale(1.2) rotate(-5deg);
 }
 
+/* deal of the day */
+.deal{
+  background: url(images/deal-of-the-day.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.deal .content {
+  max-width: 30rem;
+}
+
+.deal .content .title{
+  font-size: 4rem;
+  color: yellow;
+}
+
+.deal .content p{
+  font-size: 1.7rem;
+  padding: 1rem 0;
+  color: #018c38;
+  font-weight: bolder;
+  
+}
+
+.deal .content .count-down{
+  display: flex;
+  gap: 1rem;
+  padding: .5rem 0;
+}
+
+.deal .content .count-down .box{
+  width: 9rem;
+  text-align: center;
+  box-shadow: 0.5rem 1rem rgba(0, 0,0, .1);
+  border: .1rem solid rgba(0, 0,0, .3);
+
+}
+
+.deal .content .count-down .box h3{
+  color: black;
+  background: #fff;
+  height: 5rem;
+  line-height: 5rem;
+  width: 100%;
+  font-size: 3rem;
+}
+
+.deal .content .count-down .box span{
+  display: block;
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  padding: .5rem;
+  font-size: 1rem;
+}
+
 /* category */
  .heading{
   text-align: center;
@@ -420,23 +478,25 @@ clip-path: circle(0% at 0 50%);
 .product .box-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 15px;
 }
 
 .product .box-container .box{
-  flex:1 300px;
+  flex-basis:calc(25% - 15px);
   text-align: center;
   padding: 5px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  height: 420px;
+  min-height: 420px;
 }
 
 .product .box-container .box img{
   height: 12rem;
   width: 15.3rem;
+  object-fit: cover;
 }
 
 .product .box-container .box .discount{
@@ -520,6 +580,10 @@ clip-path: circle(0% at 0 50%);
   padding: .5rem;
   background: rgba(0, 0, 0, 0.05);
 } 
+
+.product .box-container .box .btn{
+  display: block;
+}
 
 
 

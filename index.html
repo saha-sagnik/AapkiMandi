@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aapki Mandi</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="path/to/swiper.min.js"></script>
+
     <link rel="stylesheet" href="styles.css">
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="swiper-bundle.min.css">
@@ -92,9 +94,13 @@
       </div>
     </section>
     <!-- carousel section ends -->
+   
+    
 
     <!-- banner section starts -->
-    <section class="banner-container">
+    <section style="padding: 100px;" class="banner-container">
+
+
       <div class="banner">
         <img src="images/fresh-deals background.jpg" alt="">
         <div class="content">
@@ -115,7 +121,37 @@
 
     </section>
 
-  <section style="padding: 100px;" class="category" id="category">
+    <section style="padding:100px 80px;" class="deal" id="deal">
+      <div class="content">
+      <h3 class="title">Deal of the Day</h3>
+      <p>Hurry up and grab this limited-time offer! </p>
+      <div class="count-down">
+
+        <div class="box">
+          <h3 id="day">00</h3>
+          <span>Days</span>
+        </div>
+
+        <div class="box">
+          <h3 id="hour">00</h3>
+          <span>Hours</span>
+        </div>
+
+        <div class="box">
+          <h3 id="minute">00</h3>
+          <span>Minutes</span>
+        </div>
+
+        <div class="box">
+          <h3 id="second">00</h3>
+          <span>Seconds</span>
+        </div>
+      </div>
+      <a href="#" class="btn">Check the deal Now</a>
+      </div>
+    </section>
+
+  <section style="padding: 100px" class="category" id="category">
 
     <h1 class="heading">Shop By <span>Category</span></h1>
 
@@ -143,8 +179,8 @@
       </div>
     </div>   
   </section>
-  
-  <section class="product" id="product">
+  <!-- product section -->
+  <section style="padding: 100px 20px;" class="product" id="product">
     <h1 class="heading">Latest <span>Products</span></h1>
     <div class="box-container">
 
@@ -403,7 +439,7 @@
   </section>
 
     <!-- best and fresh section -->
-<section class="fresh-body">
+<!-- <section class="fresh-body">
   <h1 class="slider-heading">Best & Fresh Deals</h1>
     <div class="slide-container swiper">
       <div class="slide-content">
@@ -560,7 +596,7 @@
       <div class="swiper-button-prev swiper-navBtn"></div>
       <div class="swiper-pagination"></div>
   </div>
-</section>
+</section> -->
 
     <!-- FAQs -->
     <div class="BODY">
@@ -673,8 +709,10 @@
           });
         }
       });
+   
     </script>
-    
+      
+  
     <script src="script.js"></script>
     <script src="fresh.js"></script>
 
