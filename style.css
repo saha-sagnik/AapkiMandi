@@ -167,3 +167,34 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+  
+  .card{
+    width: 80% !important;
+  }
+  
+  .card-image {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .name {
+    font-size: 16px;
+  }
+  
+  .description {
+    font-size: 13px;
+  }
+  
+  .button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}
